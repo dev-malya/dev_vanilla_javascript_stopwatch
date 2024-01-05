@@ -28,6 +28,7 @@ document.getElementById('resetbutton').addEventListener('click',()=>{
 //show Time function to calculate and display accurate time in the display bar
 function ShowTime()
 {
+    //using a ternary operator to check whether hour, minute, second are in single digit to add a extra, ("0") and millisecond is in double digit and single digit and to add one or two extra ("0") respectively
     let h = hours < 10 ? "0" + hours : hours;
     let m = minutes < 10 ? "0" + minutes : minutes;
     let s = seconds < 10 ? "0" + seconds : seconds;
