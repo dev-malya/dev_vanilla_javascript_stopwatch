@@ -1,9 +1,9 @@
-//collecting all the required and necessary values
+//collect all the required values
 let [milliseconds, seconds, minutes, hours] = [0,0,0,0];
 let ShowTimer = document.getElementById('ReferTime');
 let interval = null;
 
-//event handler for start button
+//start button event handler
 document.getElementById('startbutton').addEventListener('click',()=>{
     if(interval != null){
         clearInterval(interval);
@@ -11,13 +11,13 @@ document.getElementById('startbutton').addEventListener('click',()=>{
     interval = setInterval(ShowTime,10);
 });
 
-//event handler for stop button
+//stop button event handler
 document.getElementById('stopbutton').addEventListener('click',()=>{  
     
     clearInterval(interval);   
 });
 
-//event handler for reset button
+//reset button event handler
 document.getElementById('resetbutton').addEventListener('click',()=>{
     clearInterval(interval);
     [milliseconds, seconds, minutes, hours] = [0,0,0,0];
@@ -37,7 +37,7 @@ function ShowTime()
 
     //increase milliseconds by 10 automatically initially
     milliseconds+=10;
-    //reset ms, sec, mins and hours to 0 when they reach 1000 and 60 resp and increase the count of the next bogger unit of time
+    //when milliseconds, seconds, minutes and hours reach 1000 and 60 respectively then reset them to 0 and increase the next bigger time unit
     if(milliseconds == 1000)
     {
         milliseconds = 0;
