@@ -8,10 +8,10 @@ body{
 #StopWatchContainer{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     margin-top: 5%;
     margin-left: 20%;
-    border: 2px solid black;
+    border: 2px solid #f67710;
     width: 60%;
     justify-content: center;
     align-items: center;
@@ -24,13 +24,13 @@ body{
 }
 #ReferTime{
     font-size: 3rem;
-    color: white;
-    font-family: monospace;
+    color: blueviolet;
+    font-family: Roboto Mono;
     width:90%;
     padding: 2%;
-    background-color: black;
+    background-color: #000000;
     border-radius: 40px;
-    border: 1px solid lightgray;
+    border: 1px solid blueviolet;
     word-wrap: normal;
     display: flex;
     justify-content: center;
